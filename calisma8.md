@@ -94,6 +94,24 @@ WHERE name LIKE 'L%'
 RETURNING *;
 ```
 
+# Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
+```
+DELETE FROM employee
+WHERE name = 'Rickard';
+----------------------
+DELETE FROM employee
+WHERE id = 9;
+-----------------
+DELETE FROM employee
+WHERE birthday = '1999-05-09';
+-----------------------------------
+DELETE FROM employee
+WHERE email= 'kblatchford12@webeden.co.uk';
+---------------------------------------
+DELETE FROM employee
+WHERE name LIKE 'S%';
+
+```
 
 
 
